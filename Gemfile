@@ -10,11 +10,11 @@ group :assets do
   gem 'sass-rails'
   gem 'coffee-rails'
   gem 'uglifier'
+  gem 'spine-rails'
+  gem 'eco'
 end
 
 gem 'jquery-rails'
-gem 'eco' 
-gem 'spine-rails'
 
 group :development, :test do
   gem "awesome_print", :require => false

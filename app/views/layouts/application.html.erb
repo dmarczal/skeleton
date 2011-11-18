@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8">
     <title>Skeleton</title>
-    <%= stylesheet_include_tag :application %>
+    <%= stylesheet_link_tag "application" %>
     <link rel="shortcut icon" href="/favicon.ico">
   </head>
 
   <body>
     <%= yield %>
+    <%= javascript_include_tag "application" %>
   </body>
-  <%= javascript_include_tag :application %>
 </html>
