@@ -1,55 +1,14 @@
 <!DOCTYPE html>
 <html lang="<%= I18n.locale %>">
   <head>
-    <%= javascript_include_tag "html5" %>
     <meta charset="UTF-8">
-    <title><%= Rails.application.class.name %></title>
-    <%= dispatcher_tag %>
-    <%= stylesheet_includes :application %>
+    <title>Skeleton</title>
+    <%= stylesheet_include_tag :application %>
     <link rel="shortcut icon" href="/favicon.ico">
   </head>
-  
-  <div class="topbar">
-    <div class="topbar-inner">
-      <div class="container">
-        <%= link_to 'Skeleton', root_path, :class => 'brand' %>
-        <ul class="nav">
-          <li><%= link_to 'Link', root_path %></li>
-          <li><%= link_to 'Link', root_path %></li>
-          <li><%= link_to 'Link', root_path %></li>
-        </ul>
-      </div>
-    </div>
-  </div>
 
-  <%= body do %>
-    <%= header :class => 'jumbotron masthead' do %>
-      <div class="inner">
-        <div class="container">
-          <h1>Skeleton</h1>
-          <p class="lead">
-            Lorem ipsum dolor sit amet, consectetur adipisicing
-            elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
-          </p>
-        </div>
-      </div>
-    <% end %>
-    
-    <div class="container">
-      <%= section do %>
-        <%= yield %>
-      <% end %>
-    </div>
-    
-    <footer class="footer">
-      <div class="container">
-        <p>
-          &copy <%= Time.zone.now.year %> Luan Santos - <%= link_to 'luansantos.com', 'http://luansantos.com' %>.
-        </p>
-      </div>
-    </footer>
-    <%= jquery_script_tag "1.7.0" %>
-    <%= javascript_includes :application %>
-  <% end %>
+  <body>
+    <%= yield %>
+  </body>
+  <%= javascript_include_tag :application %>
 </html>

@@ -4,14 +4,17 @@ gem "rails", "3.1.1"
 gem "mongoid"
 gem "bson_ext"
 gem "simple_form"
-gem "swiss_knife"
 gem "thin"
 
 group :assets do
   gem 'sass-rails'
+  gem 'coffee-rails'
   gem 'uglifier'
 end
-gem "css-bootstrap-rails"
+
+gem 'jquery-rails'
+gem 'eco' 
+gem 'spine-rails'
 
 group :development, :test do
   gem "awesome_print", :require => false
